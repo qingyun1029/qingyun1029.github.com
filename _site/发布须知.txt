@@ -1,7 +1,0 @@
-发布时，需要删除一些文件里面的 {{ site.baseurl }}，因为域名不同了，文件列表如下：
- index.html
- header.html
- default.html
- detail.html
-
-

@@ -1,0 +1,9 @@
+<span class="author">
+    作者：<a href="javascript:void();" style="text-decoration:none;">{{ author }}</a>
+</span>
+<span>•</span>
+<!--
+    date_to_string
+-->
+<time class="post-date" datetime="{{ date | "%Y-%m-%d" }}" title="{{ date | "%Y-%m-%d" }}">{{ date | date: "%Y-%m-%d" }}</time>
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>mvvm 05</title>    
+    <!--<link rel="stylesheet" href=" //_assets/css/bootstrap.min.css " />
+    <link rel="stylesheet" href=" //_assets/css/font-awesome.min.css " />
+    <link rel="stylesheet" href=" //_assets/css/site.css " />
+    <link rel="stylesheet" href=" //_assets/css/pace-theme-minimal.css " />
+    <link rel="stylesheet" href=" //_assets/css/syntax.css " />-->
+    <!--<link rel="stylesheet" href=" //_assets/css/code.css " />-->
+    
+    <link href="/assets/css/bootstrap.min-78e7f91c0c4cca415e0683626aa23925.css" rel="stylesheet" media="screen, projection" />
+    <link href="/assets/css/font-awesome.min-269550530cc127b6aa5a35925a7de6ce.css" rel="stylesheet" media="screen, projection" />
+    <link href="/assets/css/site-82191b5387f7f1390fcb5fb1cdebd9ca.css" rel="stylesheet" media="screen, projection" />
+    <link href="/assets/css/pace-theme-minimal-7ca1c93d671b547757bfb51f27909602.css" rel="stylesheet" media="screen, projection" />
+    <link href="/assets/css/syntax-2b57a550ab9f75f6f219dcb58df6b591.css" rel="stylesheet" media="screen, projection" />
+
+    <!--<link href="http://localhost:4000/assets/css/main-ba4a3e5c12973a8d53c0d94b7b498fc0.css" rel="stylesheet" media="screen, projection" />-->
+
+    <!---->
+
+</head>
+<body class="home-template">
+
+<!--
+    参考网站：
+    http://www.ghostchina.com/
+    http://www.golaravel.com/
+-->
+
+<!-- start header -->
+<header class="main-header" style="background-image: url( /assets/images/header.jpg )">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <a class="branding normal" href="javascript:void(0);" title="qingyun1029.com">
+                    <img class="site-author-image" src=" /assets/images/branding.png " alt="个人博客">
+                </a>                
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+<!-- start navigation -->
+<nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header">
+                    <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        <li class="nav-current" role="presentation"><a href="/">首页</a></li>
+                        <!--文章按年份分组-->
+                        <!--<li role="presentation"><a href="#">文章</a></li>-->
+                        <!--文章分类-->
+                        <li role="presentation"><a href="#">分类</a></li>
+                        <li role="presentation"><a href="#">标签</a></li>
+                        <li role="presentation"><a href="#">关于</a></li>
+                        <!--<li role="presentation"><a href="#">打赏</a></li>-->
+                        <li role="presentation"><a href="#">轻松一下</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- end navigation -->
+<!-- start site's main content area -->
+<section class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-8 col-sm-12 main-content">
+                <article class="post">
+    <div class="post-head">
+        <header>
+            <p class="post-title">
+                <a href="/javascript/2016/12/16/mvvm-05.html">mvvm 05</a>
+            </p>
+        </header>
+        <div class="post-meta">            
+            
+            
+                            
+            <span class="author">
+    作者：<a href="javascript:void();" style="text-decoration:none;"> 青云 </a>
+</span>
+<span>•</span>
+<!--
+    date_to_string
+-->
+<time class="post-date" datetime=" 2016-12-16 00:00:00 +0800 " title=" 2016-12-16 00:00:00 +0800 ">2016-12-16</time>
+
+
+        </div>
+    </div>
+    <div class="post-content">
+        <p>
+            <p>mvvm 第五篇技术博客</p>
+
+        </p>
+    </div>
+    <div class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            分类:
+            <!--<i class="fa fa-folder-open-o"></i>-->
+            javascript            
+        </div>
+        <div class="pull-right share">
+            标签:
+            mvvm,jekyll
+            <!--
+                <i class="fa fa-folder-open-o"></i>
+                
+                mvvm
+                
+                jekyll
+                
+            -->
+        </div>
+    </div>
+    <div class="alert alert-info" style="background-color:#fcf8e3;" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <strong>友情提示!</strong>本文的版权归作者 <a class="alert-link" href="mailto:892764762@qq.com">青云</a> 所有，采用 <a class="alert-link" href="http://creativecommons.org/licenses/by-nc/3.0/">Attribution-NonCommercial 3.0 License</a>。任何人可以进行转载、分享，但不可在未经允许的情况下用于商业用途；转载请注明出处。感谢配合！
+</div>
+</article>
+
+<div class="prev-next-wrap clearfix">
+<!--
+    前一篇 和 后一篇
+    因为首页通过 site.posts 获取的所有帖子都是通过日期倒序排序的，
+    但是，page.previous 却是在升序结果中获取的，所以 page.previous、page.next 两者应该倒过来理解。
+-->
+    
+        &nbsp;
+        <!--<li><a href="">Archive</a></li>-->
+    
+        <a class="btn btn-default" href="/angularjs/2016/12/03/aaa.html" title="aaa">aaa<i class="fa fa-angle-right fa-fw"></i></a>
+    
+</div>
+            </main>
+
+            <!--
+                图标参考
+                http://v3.bootcss.com/components/
+            -->
+
+            <!--如果是详细页，显示 toc-->
+            
+            
+            <aside class="col-md-4 sidebar">                
+                <div id="toc" style="width: 360px;">
+
+                </div>
+            </aside>
+            
+
+            <!--如果不是详细页，显示 其他栏目-->
+            
+        </div>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            
+            <!--<div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title">最新文章</h4>
+                    <div class="content recent-post">
+                        
+                            <div class="recent-single-post">
+                                <a href="/javascript/2016/12/16/mvvm-05.html" class="post-title">mvvm 05</a>
+                                <div class="date">2016-12-16</div>
+                            </div>
+                        
+                            <div class="recent-single-post">
+                                <a href="/angularjs/2016/12/03/aaa.html" class="post-title">aaa</a>
+                                <div class="date">2016-12-03</div>
+                            </div>
+                        
+                            <div class="recent-single-post">
+                                <a href="/angularjs/2016/12/02/bbb.html" class="post-title">bbb</a>
+                                <div class="date">2016-12-02</div>
+                            </div>
+                        
+                            <div class="recent-single-post">
+                                <a href="/angularjs/2016/12/01/javascript.html" class="post-title">javascript教程首页</a>
+                                <div class="date">2016-12-01</div>
+                            </div>
+                        
+                            <div class="recent-single-post">
+                                <a href="/angularjs/2016/11/30/angularjs.html" class="post-title">angularjs教程首页</a>
+                                <div class="date">2016-11-30</div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>-->
+            <div class="col-sm-4">
+                <div class="widget">
+                    <div class="title">标签</div>
+                    <div class="content tag-cloud">
+                        
+                            <a href="#">
+                            原创
+                            </a>
+                        
+                            <a href="#">
+                            转载
+                            </a>
+                        
+                            <a href="#">
+                            翻译
+                            </a>
+                        
+                            <a href="#">
+                            开发中遇到的bug
+                            </a>
+                        
+                            <a href="#">
+                            mvvm
+                            </a>
+                        
+                            <a href="#">
+                            jekyll
+                            </a>
+                        
+                        <a href="/tag-cloud/">...</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="widget">
+                    <div class="title">友情链接</div>
+                    <div class="content tag-cloud friend-links">
+                        
+                            <a href="http://g.cn" title="谷歌" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'bootcsscom'])" target="_blank">Google</a>
+                        
+                            <a href="http://" title="小A" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'bootcsscom'])" target="_blank">小A</a>
+                        
+                            <a href="http://" title="allean" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'bootcsscom'])" target="_blank">allean</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright © <a href="http://www.qingyun1029.com/">qingyun1029.com</a></span>
+                <!--<span> | </span>-->
+                <!--<span>粤ICP备xxxxx号</span>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" id="back-to-top" style="display: inline;">
+    <i class="fa fa-angle-up"></i>
+</a>
+<!--
+参考：
+https://segmentfault.com/q/1010000003820970/revision
+-->
+
+</body>
+</html>
+
+<!--<script src="//_assets/js/jquery-3.1.1.min.js"></script>
+<script src="//_assets/js/bootstrap.min.js"></script>
+<script src="//_assets/js/pace.min.js"></script>
+<script src="//_assets/js/toc.js"></script>
+<script src="//_assets/js/scrollspy.js"></script>
+<script src="//_assets/js/jquery.fitvids.js"></script>
+<script src="//_assets/js/site.js"></script>-->
+
+<script type="text/javascript" src="/assets/js/jquery-3.1.1.min-e071abda8fe61194711cfc2ab99fe104.js"></script>
+<script type="text/javascript" src="/assets/js-095125d315fccf1babd86cc8a42b1843.js" id="my-scripts" async></script>
+
